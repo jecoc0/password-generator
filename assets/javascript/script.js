@@ -35,49 +35,49 @@ function writePassword() {
 
     if(lowerSel === true && upperSel === true && numberSel === true && symbolSel === true) {
       superArray = [].concat(numbers,symbols, upperAlpha, alphabet);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === true && numberSel === true && symbolSel === false) {
       superArray = [].concat(numbers, upperAlpha, alphabet);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === true && numberSel === true && symbolSel === true) {
       superArray = [].concat(upperAlpha, numbers, symbols);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === false && numberSel === true && symbolSel === true) {
       superArray = [].concat(alphabet,numbers,symbols);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === true && numberSel === false && symbolSel === true) {
       superArray = [].concat(alphabet, upperAlpha, symbols);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === true && numberSel === false && symbolSel === false) {
       superArray = [].concat(upperAlpha, alphabet);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === true && numberSel === true && symbolSel === false) {
       superArray = [].concat(upperAlpha, numbers);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === false && numberSel === true && symbolSel === false) {
       superArray = [].concat(alphabet,numbers);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === false && numberSel === false && symbolSel === true) {
       superArray = [].concat(alphabet,symbols);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === false && numberSel === true && symbolSel === true) {
       superArray = [].concat(symbols,numbers);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === true && numberSel === false && symbolSel === true) {
       superArray = [].concat(upperAlpha,symbols);
-      console.log(superArray)
+      
     } else if (lowerSel === true && upperSel === false && numberSel === false && symbolSel === false) {
       superArray = [].concat(alphabet);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === true && numberSel === false && symbolSel === false) {
       superArray = [].concat(upperAlpha);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === false && numberSel === true && symbolSel === false) {
       superArray = [].concat(numbers);
-      console.log(superArray)
+      
     } else if (lowerSel === false && upperSel === false && numberSel === false && symbolSel === true) {
       superArray = [].concat(symbols);
-      console.log(superArray)
+      
 
     } else if (lowerSel === false && upperSel === false && numberSel === false && symbolSel === false) {
       window.prompt("Please refresh the page and select YES for at least one option")
@@ -96,7 +96,7 @@ function writePassword() {
   
      }
 
-     console.log(password.join(''));
+ 
      passwordText.value = password.join('');
 
 
