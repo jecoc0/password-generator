@@ -5,6 +5,7 @@ var password = [];
 // Write password to the #password input
 function writePassword() {
   // var password = generatePassword();
+  var password = [];
  var passwordText = document.querySelector("#password");
 
  
@@ -18,7 +19,7 @@ function writePassword() {
    })
  
  var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
- var symbols = ["~", "/", "*"];
+ var symbols = ["~", "/", "*", "!", "@", "#", "$", "%", "&", "(", ")"];
 
 
   var characterNumber = parseInt(window.prompt("How many characters long should your passwork be? Select a number between 8-129"));
