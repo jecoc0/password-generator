@@ -1,12 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var password = [];
 
 // Write password to the #password input
 function writePassword() {
   // var password = generatePassword();
- //  var passwordText = document.querySelector("#password");
+ var passwordText = document.querySelector("#password");
 
- // passwordText.value = password;
+ 
 
 
  // set up arrays for each data type
@@ -19,7 +20,8 @@ function writePassword() {
  var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
  var symbols = ["~", "/", "*"];
 
-  var characterNumber = window.prompt("How many characters long should your passwork be? Select a number between 8-129")
+
+  var characterNumber = parseInt(window.prompt("How many characters long should your passwork be? Select a number between 8-129"));
   var lowerSel = window.confirm("Would you like to include lowercase characters in your password?")
   var upperSel = window.confirm("Would you like to include uppercase characters in your password?")
   var numberSel = window.confirm("Would you like to include numbers in your password?")
@@ -85,25 +87,32 @@ function writePassword() {
 
 
   // use a for loop with characterNumber as the amount of times the for loop will run
+   for (var i = 0; i < characterNumber; i++) {
+    var passwordChar = superArray[Math.floor(Math.random()*superArray.length)]
+      
+    password.push(passwordChar)
+    
+  
+     }
+
+     console.log(password.join(''));
+     passwordText.value = password.join('');
+
+
 
   // use a random method to select randomly from the superArray
 
 
+
+
 }
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
 
-// generate random characters (from array(s))
-// do I want one array for uppercase, lowercase, symbols, numbers?
-// combine into new array to select?
 
-
-// for loop to keep selecting a random character
 
 
 
